@@ -1,0 +1,24 @@
+.mood {
+    height: 300px;
+    weight: 300px;
+}
+
+
+h2 {
+    color: #333333;
+}
+
+h1 {
+    color: #333333;
+    font-size: 200%;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+
+body {
+    background-color: #ebeceb;
+}
+
+b{
+    color:#FF8C00;
+
+}
