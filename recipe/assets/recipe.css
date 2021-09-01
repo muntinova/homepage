@@ -7,13 +7,18 @@ h1 {
     text-decoration: underline;
 }
 
-#mainheading {
+#head {
     text-align: center;
     font-size: 22pt;
+    font-weight: bold;
+    margin: auto;
+}
+.description > p {
+    margin: 1px;
 }
 
 body {
-    background-image: url("recipe/assets/silverware.jpg");
+    background-image: url("silverware.jpg");
     background-attachment: fixed;
     color: #404040;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -23,10 +28,11 @@ a {
     color: #A4A400;
 }
 
-.comments {
+blockquote {
     background-color: #FFFFA8;
+    font-style: italic;
 }
 
 li {
-    list-style-image: url('assets/pie_icon.gif');
+    list-style-image: url('pie_icon.gif');
 }
