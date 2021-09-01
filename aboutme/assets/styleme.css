@@ -52,11 +52,11 @@ a:hover {
     flex-direction: column-reverse;
 }
 
-li ol {
+li dl {
     display: none;
 }
 
-li:hover ol {
+li:hover dl {
     display: block;
 }
 
