@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-    background-image: url("assets/silverware.jpg");
+    background-image: url("recipe/assets/silverware.jpg");
     background-attachment: fixed;
     color: #404040;
     font-family: Georgia, 'Times New Roman', Times, serif;

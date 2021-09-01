@@ -1,0 +1,73 @@
+.mood {
+    height: 300px;
+    width:  300px;
+}
+
+/**
+Create a stylesheet named styleme.css to improve the appearance of your About Me page.
+ +Change the color of at least two elements
+ Change the font properties (family, size, weight, or style) of at least two elements. Some
+standard fonts: Arial, Arial Black, Verdana, Trebuchet MS,Georgia, Tahoma, Courier
+New, Times New Roman
++ Change at least one other thing (e.g. background color, text alignment, etc.)
+
+*/
+b {
+    color:#FF8C00;
+
+}
+ p{
+     font-size: large;
+ }
+h2 {
+    color: #333333;
+}
+
+h1 {
+    color: #333333;
+    font-size: 200%;
+    font-family: Arial Black, Arial Bold, Gadget, sans-serif;
+}
+
+
+body {
+    background-color: #ebeceb;
+}
+p:first-letter {
+    font-size: 200%;
+}
+
+.movie {
+    color: darkred;
+}
+/**Links: (hover is not shown)*/
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+li ol {
+    display: none;
+}
+
+li:hover ol {
+    display: block;
+}
+
+
+ol ol {
+    list-style-type: none;
+    color: black;
+}
+
+.details {
+    color: #FF8C00;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
