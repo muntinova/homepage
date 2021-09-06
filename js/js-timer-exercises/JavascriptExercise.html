@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Javascript Exercise </title>
+    <link href="JavascriptExercise.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+    <div id="content">
+        <h1 class="title">
+            Javascript Exercise
+        </h1>
+
+        <p class="question">
+            1. What is the difference between the following 2 statements? </p>
+            <code>
+                setTimeout(booyah, 2000);<br>
+                setTimeout(booyah(), 2000);
+            </code>
+       
+        <p class="answer">Answer:</p> 
+        <p>
+            - 1.call booyah function  after 2000 milliseconds. <br>
+            - 2.calls the function immediately
+        </p>
+        <hr>
+
+
+        <p class="question"> 2. What do the following 2 alerts display (answer without running the code)?</p>
+        <p>
+            <pre>
+                var myfunc = function(a, x) {
+                    return a * x;
+                };
+                var x = myfunc(2, 3);
+                var y = myfunc;
+                alert(x);
+                alert(y(2,3));
+
+            </pre>
+        </p>
+        <p class="answer">Answer:</p> 
+        <p>It will displays an alert box with 6 twice </p>
+        <hr>
+
+        <p class="question">3. Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that says “BOOYAH!” </p>
+        <code>
+            setTimeout(booyah1, 2000); <br>
+            setTimeout(booyah2(), 2000); 
+        </code>
+        <p class="answer">Answer:</p>
+        <p>
+            <pre>
+                function onClick(){
+                    setTimeout(booyah1, 2000);	
+                }
+                function booyah1(){
+                    alert("BOOYAH!");
+                }
+            </pre>
+        </p>
+        <p>
+            <pre>
+}
+
+        <script>
+                              function onClick(){
+                                  setTimeout(booyah2(), 2000);
+                              }
+                              function booyah2(){
+                                  setTimeout(booyah3, 2000);
+                              }
+                              function booyah3(){
+                                  alert("BOOYAH!");
+                              }
+            </script>
+            </pre>
+        </p>
+        <hr>
+
+        <p class="question">4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons for using it)?
+       </p>
+        <p class="answer">Answer:</p>
+        <p>
+            Unobtrusive JavaScript is the way of writing JavaScript language in which we properly separate Document Content and Script Content thus allowing us to make a clear distinction between them.
+            This approach is useful in so many ways as it makes our code less error prone, easy to update and to debug.
+            The basic concept of unobtrusive programming is that JavaScript should be used as an enhancement to our web page instead of an absolute requirement.
+            If you do not need JavaScript, then don't use it; your static content will display just fine with plain old HTML and CSS.
+            So many developers make the mistake of importing code libraries before even figuring out if they will be even required.
+            jQuery for example has been so much mis-used when all our basic needs can be easily fulfilled by CSS and pure JavaScript code.
+        </p> 
+        
+    </div>
+</body>
+</html>
