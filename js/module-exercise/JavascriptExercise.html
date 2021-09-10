@@ -313,7 +313,7 @@
     <p class="question"> 13. Write a few Javascript instructions to extend the Module of Question 10 to have a public address field and public methods setAddress(newAddress) and getAddress( ).</p>
     <p class="answer">Answer: ->
     <pre>
-                employee.address;
+                employee.address="";
 
                 employee.setAddress = function(newAddress){
                     return address = newAddress;
@@ -342,15 +342,43 @@
     <p class="question"> 15.  What is the output of the following code?</p>
     <pre>
             const promise = new Promise((resolve, reject) => {
-                reject(“Hattori”);
-                setTimeout(()=> reject(“Yoshi”), 500);
+               resolve(“Hattori”);
+               setTimeout(()=> reject(“Yoshi”), 500);
             });
-            promise.then(val => alert(“Success: “ + val)).catch(e => alert(“Error: “ + e));
+            promise.then(val => alert(“Success: “ + val))
+                    .catch(e => alert(“Error: “ + e));
         </pre>
     <p class="answer">Answer: ->    <br>
-        Error: Hattori <br>
-        Error: Yoshi
+        Success: Hattori <br>
+    </p> <hr>
+
+    <p class="question"> 16.  What is the output of the following code?</p>
+    <pre>
+        function job(state) {
+                 return new Promise(function(resolve, reject) {
+                  if (state) {
+                     resolve('success');
+                  } else {
+                     reject('error');
+                  }
+           });
+        }
+        let promise = job(true);
+
+        promise.then(function(data) {
+                         console.log(data);
+                         return job(false);})
+               .catch(function(error) {
+                          console.log(error);
+                           return 'Error caught';
+       });
+        </pre>
+    <p class="answer">Answer: ->    <br>
+        success <br>
+        error <br>
+        Error caught <br>
     </p>
+    <br>
     <br>
 </div>
 </body>
