@@ -66,20 +66,14 @@ They are same:
     <hr>
     <h4 class="answer">Answer:</h4>
     <pre>
-
+    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script&gt;
+		&lt;!-- INSERT YOUR JQUERY CODE HERE --&gt;
+		$(document).ready(function () {
+		    $("div").has("ul").css("background-color", "blue");
+		});
+	&lt;/script&gt;
     </pre>
-    <hr>
-    <h4 class="answer">Demo: </h4>
-
-    <div>no ul here </div>
-    <div>
-        This does contain a ul.
-        <ul>
-            <li>the first item</li>
-            <li>the second item</li>
-        </ul>
-    </div>
-
     <hr>
 
     <h4 class="question">3. Write jQuery code to append the following div element (and all of its contents) dynamically to the body
@@ -100,10 +94,23 @@ They are same:
     <hr>
     <h4 class="answer">Answer:</h4>
     <pre>
-
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset="utf-8"&gt;
+            &lt;title&gt;JS Bin&lt;/title&gt;
+            &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"&gt;&lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;script&gt;
+                $(document).ready(function(){
+                    $('body').append('&lt;div&gt;&lt;h1&gt;JQuery Core&lt;/h1&gt;&lt;/div&gt;');
+                });
+            &lt;/script&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
     </pre>
-    <hr>
-    <h4 class="answer">Demo:</h4>
+
 
     <br>
     <br>
