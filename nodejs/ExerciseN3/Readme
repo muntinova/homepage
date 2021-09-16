@@ -1,0 +1,6 @@
+1) D:\nodejs> node ExerciseN3/http_url.js
+2)
+    http://localhost:8080/apples
+    http://localhost:8080/pears
+    http://localhost:8080/strawberries
+
